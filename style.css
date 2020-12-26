@@ -1,0 +1,209 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.intro {
+  font-size: 2.6em;
+  font-weight: 300;
+  text-align: center;
+  color: #5f0a70;
+  background: #f5e2fa;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.chrisStyle {
+  background: -webkit-linear-gradient(
+    180deg,
+    #faa245 20%,
+    #ce10ae 37.25%,
+    #d30e1f 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+.form-heading span.chrisStyle:last-child {
+  font-weight: 600;
+}
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7em;
+  background: #f4ceff;
+  display: none;
+}
+.result p {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.result span {
+  font-size: 3em;
+  color: #5f0a70;
+  margin: 0 0.3em;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  background: #5f0a70;
+  max-height: 100%;
+  padding: 3em 2em 4em;
+  color: white;
+}
+.form-heading {
+  background: #8d14a594;
+  border-radius: 0.3em;
+  font-size: 2.1em;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1.1px;
+  padding: 1em;
+  margin-bottom: 0.9em;
+  text-align: center;
+}
+.form-heading p:last-child {
+  font-family: Arial;
+  font-size: 1.9rem;
+}
+.form-question {
+  padding: 0.5em;
+}
+.form-question p {
+  font-size: 1.15em;
+  letter-spacing: 1px;
+  padding: 0.3em;
+  line-height: 1.7em;
+}
+.form-option {
+  margin-left: 1.5em;
+}
+.form-option input,
+.form-option label {
+  margin: 0.4em 0.2em 0.5em;
+  color: #ffffffb0;
+}
+.form-option input {
+  font-size: 1.5em;
+}
+.form-option label {
+  font-family: Arial;
+  font-size: 1.05em;
+  letter-spacing: 0.03em;
+}
+.submit {
+  margin: 2em 0 0;
+  display: flex;
+  justify-content: center;
+}
+.submit input {
+  font-size: 1em;
+  font-family: Arial;
+  font-weight: 600;
+  color: #5f0a70;
+  padding: 0.5em 1.2em;
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+  border-radius: 0.4em;
+}
+.submit input:focus,
+.submit input:hover {
+  border-style: none;
+  transform: scale(1.05);
+  background: #e8b3f3;
+}
+.footer {
+  font-size: 1.1em;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #fff;
+  background: #450655;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  margin: 0.5em 0;
+}
+.footer .copy {
+  font-size: 0.8em;
+}
+.heart {
+  background: transparent;
+  font-size: 1.5em;
+  position: fixed;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+  /* display: none; */
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+}
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.3em;
+  }
+  .intro {
+    height: 25vh;
+  }
+  .result {
+    height: 15vh;
+  }
+  .result p {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.3em;
+  }
+  .form-heading {
+    font-size: 1.5em;
+  }
+  .form-heading p:last-child {
+    font-size: 1.45rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 1.15em;
+  }
+  .result p {
+    font-size: 1.1em;
+  }
+}
