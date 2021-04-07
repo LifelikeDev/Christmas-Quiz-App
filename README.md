@@ -1,6 +1,6 @@
 # Christmas-Quiz-App
 
-A simple app to test your knowledge on Christmas.
+A simple app to test how well you know Christmas and all there is about it.
 
 This app was built with
 - HTML
